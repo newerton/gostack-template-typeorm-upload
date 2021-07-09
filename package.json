@@ -22,7 +22,7 @@
     "typeorm": "^0.2.31"
   },
   "devDependencies": {
-    "@types/express": "4.17.12",
+    "@types/express": "4.17.13",
     "@types/express-serve-static-core": "4.17.22",
     "@types/jest": "^26.0.21",
     "@types/multer": "^1.4.2",
