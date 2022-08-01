@@ -19,6 +19,9 @@ transactionsRouter.get('/', async (request, response) => {
 
   const transactions = await transactionsRepository.find({
     relations: ['category'],
+    order: {
+      created_at: 'DESC',
+    },
   });
 
   return response.json({
