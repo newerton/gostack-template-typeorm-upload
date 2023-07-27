@@ -32,7 +32,7 @@ class Transaction {
   @JoinColumn({ name: 'category_id' })
   category: Category;
 
-  @CreateDateColumn({ select: false })
+  @CreateDateColumn()
   created_at: Date;
 
   @UpdateDateColumn({ select: false })
