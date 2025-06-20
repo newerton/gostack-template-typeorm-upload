@@ -19,7 +19,7 @@
     "multer": "^2.0.1",
     "pg": "^8.16.1",
     "reflect-metadata": "^0.2.0",
-    "typeorm": "^0.3.3"
+    "typeorm": "^0.3.25"
   },
   "devDependencies": {
     "@types/express": "5.0.3",
