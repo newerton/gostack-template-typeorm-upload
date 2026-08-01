@@ -1,6 +1,6 @@
 import { getCustomRepository } from 'typeorm';
-import TransactionsRepository from '../repositories/TransactionsRepository';
 import AppError from '../errors/AppError';
+import TransactionsRepository from '../repositories/TransactionsRepository';
 
 interface Request {
   id: string;

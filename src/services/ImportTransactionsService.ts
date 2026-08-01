@@ -1,10 +1,10 @@
-import fs from 'fs';
+import fs from 'node:fs';
 import csv from 'csv-parse/lib/sync';
 import { getCustomRepository } from 'typeorm';
-import Transaction from '../models/Transaction';
 import configUpload from '../config/upload';
-import CreateTransactionService from './CreateTransactionService';
+import Transaction from '../models/Transaction';
 import TransactionsRepository from '../repositories/TransactionsRepository';
+import CreateTransactionService from './CreateTransactionService';
 
 interface Request {
   filename: string;
@@ -29,7 +29,7 @@ class ImportTransactionsService {
     const records = await csv(fileName, { delimiter: ', ', columns: true });
 
     for (const item of records) {
-      const transaction = await createTransaction.execute({
+      const _transaction = await createTransaction.execute({
         title: item.title,
         value: parseFloat(item.value),
         type: item.type,

@@ -1,11 +1,11 @@
 import {
-  Entity,
   Column,
-  PrimaryGeneratedColumn,
   CreateDateColumn,
-  UpdateDateColumn,
+  Entity,
   JoinColumn,
   OneToOne,
+  PrimaryGeneratedColumn,
+  UpdateDateColumn,
 } from 'typeorm';
 import Category from './Category';
 
@@ -28,7 +28,7 @@ class Transaction {
   @Column({ select: false })
   category_id: string;
 
-  @OneToOne(type => Category)
+  @OneToOne((_type) => Category)
   @JoinColumn({ name: 'category_id' })
   category: Category;
 
