@@ -20,7 +20,7 @@
     "multer": "^2.4.0",
     "pg": "^8.23.1",
     "reflect-metadata": "^0.2.0",
-    "typeorm": "^1.1.1"
+    "typeorm": "^1.1.2"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
